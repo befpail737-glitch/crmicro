@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSFET Technology Comparison Guide | CRMICRO Technical Article</title>
+    <meta name="description" content="Comprehensive comparison of MOSFET technologies including trench, super junction, and shielded gate designs. Understand the trade-offs between different MOSFET technologies for your applications.">
+    <meta name="keywords" content="MOSFET comparison, trench MOSFET, super junction MOSFET, shielded gate MOSFET, power MOSFET selection, CRMICRO MOSFET">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="canonical" href="https://crmicro.elec-distributor.com/support/technical-articles/mosfet-technology-comparison/">
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://crmicro.elec-distributor.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Support",
+        "item": "https://crmicro.elec-distributor.com/support/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Technical Articles",
+        "item": "https://crmicro.elec-distributor.com/support/technical-articles/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "MOSFET Comparison",
+        "item": "https://crmicro.elec-distributor.com/support/technical-articles/mosfet-technology-comparison/"
+      }]
+    }
+    </script>
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "MOSFET Technology Comparison Guide",
+      "description": "Comprehensive comparison of MOSFET technologies including trench, super junction, and shielded gate designs. Understand the trade-offs between different MOSFET technologies for your applications.",
+      "author": {
+        "@type": "Person",
+        "name": "LiTong Technical Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Electronics",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://crmicro.elec-distributor.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "articleBody": "This comprehensive article compares different MOSFET technologies including trench, super junction, and shielded gate designs to help engineers make informed decisions."
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <object type="image/svg+xml" data="../../svg/logo.svg" width="180" height="40">
+                    <img src="../../images/logo-placeholder.png" alt="LiTong Logo - Authorized CRMICRO Distributor">
+                </object>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/solutions/">Solutions</a></li>
+                    <li><a href="/support/">Support</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> > <a href="/support/">Support</a> > <a href="/support/technical-articles/">Technical Articles</a> > <span>MOSFET Comparison</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="technical-article">
+        <div class="container">
+            <h1>MOSFET Technology Comparison Guide</h1>
+            <div class="article-meta">
+                <span class="author">By: LiTong Technical Team</span>
+                <span class="date">Published: January 15, 2025</span>
+                <span class="reading-time">Reading time: 10 minutes</span>
+            </div>
+            
+            <div class="article-intro">
+                <p>Selecting the right MOSFET technology is crucial for achieving optimal performance in power conversion applications. This guide provides a comprehensive comparison of different MOSFET technologies, including planar, trench, super junction, and shielded gate designs, helping engineers make informed decisions.</p>
+            </div>
+            
+            <h2>Evolution of MOSFET Technologies</h2>
+            <p>MOSFET technology has evolved significantly over the decades to meet the increasing demands of power electronics applications. Each technology addresses specific challenges related to conduction losses, switching losses, and device ruggedness.</p>
+            
+            <h2>Planar MOSFETs</h2>
+            <p>Planar MOSFETs represent the original MOSFET structure, where the gate electrode is formed on the surface of the silicon substrate.</p>
+            
+            <h3>Structure and Operation</h3>
+            <p>Planar MOSFETs have a simple structure where the channel is formed at the surface of the silicon. The on-resistance is primarily determined by the drift region resistance and channel resistance.</p>
+            
+            <h3>Advantages</h3>
+            <ul>
+                <li>Proven reliability and ruggedness</li>
+                <li>Simpler manufacturing process</li>
+                <li>Good avalanche capability</li>
+                <li>Larger safe operating area</li>
+            </ul>
+            
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>Higher on-resistance for given area compared to other technologies</li>
+                <li>Limited performance at higher voltage ratings</li>
+                <li>Less efficient for modern high-frequency applications</li>
+            </ul>
+            
+            <h3>Typical Applications</h3>
+            <p>Planar MOSFETs are still suitable for applications where ruggedness and simplicity are more important than efficiency, such as motor control with high inductive loads and some industrial applications.</p>
+            
+            <h2>Trench MOSFETs</h2>
+            <p>Trench MOSFETs improve upon planar technology by etching trenches into the silicon surface and forming the gate electrode in these trenches.</p>
+            
+            <h3>Structure and Operation</h3>
+            <p>In trench MOSFETs, the channel is formed on the walls of the trenches, allowing for a higher channel density per unit area. This results in significantly lower on-resistance compared to planar devices of the same die size.</p>
+            
+            <h3>Advantages</h3>
+            <ul>
+                <li>Lower on-resistance compared to planar for the same die size</li>
+                <li>Lower gate charge, enabling faster switching</li>
+                <li>Better performance at moderate voltage ratings (20V to 200V)</li>
+            </ul>
+            
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>Higher di/dt capability can cause ringing in circuits</li>
+                <li>Increased gate-drain capacitance (Miller capacitance)</li>
+                <li>More susceptible to gate damage during switching</li>
+            </ul>
+            
+            <h3>Typical Applications</h3>
+            <p>Trench MOSFETs are widely used in DC-DC converters, power adapters, and other applications requiring good efficiency at moderate voltage ratings.</p>
+            
+            <h2>Super Junction (SJ) MOSFETs</h2>
+            <p>Super junction MOSFETs represent a significant advancement for high-voltage applications (typically 600V to 900V), featuring alternating p-type and n-type columns in the drift region.</p>
+            
+            <h3>Structure and Operation</h3>
+            <p>The super junction structure allows for a high doping concentration in the drift region while maintaining high breakdown voltage. When properly balanced, the p-type and n-type columns completely deplete in the off-state, enabling high breakdown voltage with very low on-resistance.</p>
+            
+            <h3>Advantages</h3>
+            <ul>
+                <li>Significantly lower on-resistance compared to other technologies for high-voltage ratings</li>
+                <li>Better figure of merit (RDS(on) × Qg)</li>
+                <li>Excellent performance in PFC circuits and adapters</li>
+                <li>Reduced conduction losses at high voltage ratings</li>
+            </ul>
+            
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>Complex manufacturing process</li>
+                <li>More sensitive to charge imbalance</li>
+                <li>Higher cost compared to conventional technologies</li>
+                <li>Can have higher switching losses at very high frequencies</li>
+            </ul>
+            
+            <h3>Typical Applications</h3>
+            <p>Super junction MOSFETs excel in PFC boost circuits, high-voltage adapters, and other applications where high efficiency at high voltage ratings is critical.</p>
+            
+            <h2>Shielded Gate (SGT) MOSFETs</h2>
+            <p>Shielded gate MOSFETs represent the latest advancement in trench technology, featuring a conductive shield electrode between the gate and drain.</p>
+            
+            <h3>Structure and Operation</h3>
+            <p>The shield electrode in SGT MOSFETs creates a field plate effect that reduces the electric field across the gate oxide during switching. This allows for better optimization of the trade-off between on-resistance and input capacitance.</p>
+            
+            <h3>Advantages</h3>
+            <ul>
+                <li>Superior figure of merit (RDS(on) × Qg) compared to conventional trench</li>
+                <li>Optimized for high-frequency operation</li>
+                <li>Lower switching losses</li>
+                <li>Reduced Miller effect</li>
+            </ul>
+            
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>More complex manufacturing process</li>
+                <li>Higher cost compared to conventional technologies</li>
+                <li>Requires careful design for optimal performance</li>
+            </ul>
+            
+            <h3>Typical Applications</h3>
+            <p>SGT MOSFETs are ideal for LLC resonant converters, high-frequency adapters, and other applications requiring optimal performance in RDS(on) × Qg trade-offs.</p>
+            
+            <h2>Technology Comparison Table</h2>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Advantages</th>
+                            <th>Best Voltage Range</th>
+                            <th>Key Applications</th>
+                            <th>CRMICRO Series</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Planar</td>
+                            <td>High ruggedness, good SOA</td>
+                            <td>20V - 100V</td>
+                            <td>Motor control, automotive</td>
+                            <td>CRM Planar Series</td>
+                        </tr>
+                        <tr>
+                            <td>Trench</td>
+                            <td>Low RDS(on), low Qg</td>
+                            <td>20V - 200V</td>
+                            <td>DC-DC, adapters</td>
+                            <td>CRM Trench Series</td>
+                        </tr>
+                        <tr>
+                            <td>Super Junction</td>
+                            <td>Low RDS(on), high voltage</td>
+                            <td>600V - 900V</td>
+                            <td>PFC, high-voltage adapters</td>
+                            <td>CRM SJ Series</td>
+                        </tr>
+                        <tr>
+                            <td>Shielded Gate</td>
+                            <td>Optimal RDS(on)×Qg</td>
+                            <td>25V - 650V</td>
+                            <td>LLC, high-frequency</td>
+                            <td>CRM SGT Series</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2>Selection Criteria</h2>
+            <p>When selecting a MOSFET technology, consider the following criteria:</p>
+            
+            <h3>Voltage Rating</h3>
+            <p>The voltage rating is determined by the maximum drain-to-source voltage in your application with sufficient margin. For high-voltage applications (600V+), super junction technology typically offers the best performance.</p>
+            
+            <h3>Switching Frequency</h3>
+            <p>At low frequencies, conduction losses dominate, so on-resistance is the primary concern. At high frequencies, switching losses become significant, making charge-related parameters more important.</p>
+            
+            <h3>Thermal Considerations</h3>
+            <p>Consider the thermal resistance and how the MOSFET will be mounted. Technologies with lower on-resistance generally generate less heat during conduction.</p>
+            
+            <h3>Cost Constraints</h3>
+            <p>While newer technologies offer better performance, they often come at a higher cost. Balance performance needs with budget constraints.</p>
+            
+            <h2>CRMICRO MOSFET Portfolio</h2>
+            <p>CRMICRO offers comprehensive MOSFET solutions across all major technology categories:</p>
+            
+            <h3>SGT Series</h3>
+            <p>CRMICRO's Shielded Gate Trench MOSFETs feature the lowest RDS(on) × Qg figure of merit, making them ideal for high-frequency applications such as LLC resonant converters and high-efficiency adapters.</p>
+            
+            <h3>SJ Series</h3>
+            <p>CRMICRO's Super Junction MOSFETs provide excellent performance in PFC applications and high-voltage adapters, with some of the lowest on-resistance values in the industry.</p>
+            
+            <h3>Trench Series</h3>
+            <p>CRMICRO's standard trench MOSFETs offer a good balance of performance and cost for general-purpose power conversion applications.</p>
+            
+            <h2>Design Considerations</h2>
+            <p>When implementing different MOSFET technologies, consider:</p>
+            
+            <h3>Gate Drive Requirements</h3>
+            <p>Different technologies may have different gate charge characteristics, affecting the gate driver requirements. More charge typically requires more drive capability.</p>
+            
+            <h3>Parasitic Effects</h3>
+            <p>Higher-performance MOSFETs often have faster switching speeds, which can exacerbate parasitic inductance issues. Careful PCB layout becomes increasingly important.</p>
+            
+            <h3>Protection Circuitry</h3>
+            <p>Consider the need for additional protection circuits such as snubbers or active clamps, particularly with fast-switching devices.</p>
+            
+            <div class="fae-comment">
+                <h3>Technical Note from our FAE</h3>
+                <p>For PFC applications, CRMICRO's Super Junction MOSFETs typically offer the best efficiency due to their low RDS(on). For LLC resonant converters, our Shielded Gate Trench devices provide optimal performance due to their superior RDS(on) × Qg figure of merit. The choice should always consider the specific operating conditions of your application rather than just voltage and current ratings.</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="related-content">
+        <div class="container">
+            <h2>Related Technical Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3><a href="/support/application-notes/crmicro-mosfet-design/">CRMICRO MOSFET Design Guidelines</a></h3>
+                    <p>Practical guidance on implementing CRMICRO MOSFETs in power applications.</p>
+                </div>
+                <div class="resource-card">
+                    <h3><a href="/support/selection-guides/mosfet-selection/">MOSFET Selection Guide</a></h3>
+                    <p>How to choose the right MOSFET for your specific application requirements.</p>
+                </div>
+                <div class="resource-card">
+                    <h3><a href="/products/mosfet/">CRMICRO MOSFET Products</a></h3>
+                    <p>Explore our complete portfolio of MOSFET solutions across all technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Need Help Selecting the Right MOSFET Technology?</h2>
+            <p>Our expert FAEs can guide you through the selection process for your specific application</p>
+            <a href="/contact/" class="btn-primary">Contact Our FAE Team</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/products/mosfet/">MOSFETs</a></li>
+                        <li><a href="/products/igbt/">IGBTs</a></li>
+                        <li><a href="/products/si-gan/">SiC & GaN</a></li>
+                        <li><a href="/products/power-ic/">Power ICs</a></li>
+                        <li><a href="/products/sensors/">Sensors</a></li>
+                        <li><a href="/products/mcu/">MCUs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="/solutions/ev-charging/">EV Charging</a></li>
+                        <li><a href="/solutions/power-inverters/">Power Inverters</a></li>
+                        <li><a href="/solutions/motor-drives/">Motor Drives</a></li>
+                        <li><a href="/solutions/pd-chargers/">PD Chargers</a></li>
+                        <li><a href="/solutions/bms/">BMS Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/support/selection-guides/">Selection Guides</a></li>
+                        <li><a href="/support/application-notes/">Application Notes</a></li>
+                        <li><a href="/support/faq/">FAQ</a></li>
+                        <li><a href="/support/substitution/">Substitution Guide</a></li>
+                        <li><a href="/contact/">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>LiTong Electronics</p>
+                    <p>Authorized CRMICRO Distributor</p>
+                    <p><a href="mailto:info@elec-distributor.com">info@elec-distributor.com</a></p>
+                    <p>+852 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Electronics. Authorized Distributor for CR Micro (CRMICRO).</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

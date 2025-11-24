@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f8f9fa"/>
+  
+  <!-- Globe -->
+  <circle cx="200" cy="100" r="50" fill="none" stroke="#1a4da1" stroke-width="3"/>
+  <circle cx="200" cy="100" r="45" fill="none" stroke="#1a4da1" stroke-width="1"/>
+  
+  <!-- Globe lines -->
+  <path d="M200 50 Q200 100 200 150" stroke="#1a4da1" stroke-width="1"/>
+  <path d="M150 100 Q200 100 250 100" stroke="#1a4da1" stroke-width="1"/>
+  <path d="M160 70 Q200 100 240 130" stroke="#1a4da1" stroke-width="1"/>
+  <path d="M160 130 Q200 100 240 70" stroke="#1a4da1" stroke-width="1"/>
+  
+  <!-- Location pins -->
+  <path d="M170 80 L165 90 L160 80 Z" fill="#ff6b00"/>
+  <path d="M210 95 L205 105 L200 95 Z" fill="#ff6b00"/>
+  <path d="M190 120 L185 130 L180 120 Z" fill="#ff6b00"/>
+  <path d="M230 110 L225 120 L220 110 Z" fill="#ff6b00"/>
+  
+  <!-- Communication icon -->
+  <path d="M280 60 L340 60 L350 80 L340 100 L280 100 L270 80 Z" fill="none" stroke="#1a4da1" stroke-width="2"/>
+  <path d="M280 60 L270 80 L280 100" fill="none" stroke="#1a4da1" stroke-width="2"/>
+  <circle cx="330" cy="80" r="3" fill="#1a4da1"/>
+  <circle cx="315" cy="80" r="3" fill="#1a4da1"/>
+  <circle cx="300" cy="80" r="3" fill="#1a4da1"/>
+  
+  <!-- Title text -->
+  <text x="200" y="40" text-anchor="middle" font-family="Arial" font-size="18" fill="#333">Global Sales Network</text>
+</svg>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMICRO Motor Drive Solutions | BLDC & Servo Control</title>
+    <meta name="description" content="Explore CRMICRO's comprehensive solutions for BLDC, PMSM, and servo motor drives. High-efficiency power semiconductors for industrial and consumer applications.">
+    <meta name="keywords" content="CRMICRO motor drives, BLDC motor control, PMSM drives, servo drives, motor control ICs, industrial motor control">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="canonical" href="https://crmicro.elec-distributor.com/solutions/motor-drives/">
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://crmicro.elec-distributor.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Solutions",
+        "item": "https://crmicro.elec-distributor.com/solutions/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Motor Drives",
+        "item": "https://crmicro.elec-distributor.com/solutions/motor-drives/"
+      }]
+    }
+    </script>
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "CRMICRO Motor Drive Solutions",
+      "description": "Explore CRMICRO's comprehensive solutions for BLDC, PMSM, and servo motor drives",
+      "author": {
+        "@type": "Organization",
+        "name": "LiTong Electronics"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Electronics",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://crmicro.elec-distributor.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <object type="image/svg+xml" data="../../svg/logo.svg" width="180" height="40">
+                    <img src="../../images/logo-placeholder.png" alt="LiTong Logo - Authorized CRMICRO Distributor">
+                </object>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/solutions/">Solutions</a></li>
+                    <li><a href="/support/">Support</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> > <a href="/solutions/">Solutions</a> > <span>Motor Drives</span>
+        </div>
+    </div>
+
+    <!-- Motor Drives Solution Page -->
+    <section class="solution-detail">
+        <div class="container">
+            <h1>CRMICRO Motor Drive Solutions</h1>
+            <p>CRMICRO provides comprehensive power semiconductor solutions for BLDC, PMSM, and servo motor drives. Our portfolio combines high-efficiency power semiconductors with advanced motor control ICs to meet the demanding requirements of industrial and consumer applications.</p>
+            
+            <!-- Solution Block Diagram -->
+            <div class="block-diagram">
+                <h2>Typical BLDC Drive Architecture</h2>
+                <div class="diagram-container">
+                    <svg width="100%" height="350" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg">
+                        <!-- DC Power Supply -->
+                        <rect x="50" y="50" width="100" height="60" fill="#e0e0e0" stroke="#333" />
+                        <text x="100" y="80" text-anchor="middle" font-family="Arial" font-size="14">DC</text>
+                        <text x="100" y="95" text-anchor="middle" font-family="Arial" font-size="14">Supply</text>
+                        
+                        <!-- DC Link -->
+                        <rect x="180" y="50" width="100" height="60" fill="#d0e8ff" stroke="#333" />
+                        <text x="230" y="80" text-anchor="middle" font-family="Arial" font-size="14">DC</text>
+                        <text x="230" y="95" text-anchor="middle" font-family="Arial" font-size="14">Link</text>
+                        
+                        <!-- Inverter -->
+                        <rect x="310" y="50" width="120" height="60" fill="#ffdfc4" stroke="#333" />
+                        <text x="370" y="80" text-anchor="middle" font-family="Arial" font-size="14">3-Phase</text>
+                        <text x="370" y="95" text-anchor="middle" font-family="Arial" font-size="14">Inverter</text>
+                        
+                        <!-- Motor -->
+                        <rect x="460" y="50" width="100" height="60" fill="#f0f0f0" stroke="#333" />
+                        <text x="510" y="80" text-anchor="middle" font-family="Arial" font-size="14">BLDC</text>
+                        <text x="510" y="95" text-anchor="middle" font-family="Arial" font-size="14">Motor</text>
+                        
+                        <!-- Position Sensor -->
+                        <rect x="460" y="140" width="100" height="40" fill="#e0e0e0" stroke="#333" />
+                        <text x="510" y="165" text-anchor="middle" font-family="Arial" font-size="14">Position Sensor</text>
+                        
+                        <!-- Motor Control MCU -->
+                        <rect x="180" y="140" width="120" height="60" fill="#d0e8ff" stroke="#333" />
+                        <text x="240" y="170" text-anchor="middle" font-family="Arial" font-size="14">Motor</text>
+                        <text x="240" y="185" text-anchor="middle" font-family="Arial" font-size="14">Controller</text>
+                        
+                        <!-- Gate Driver -->
+                        <rect x="310" y="140" width="120" height="40" fill="#ffdfc4" stroke="#333" />
+                        <text x="370" y="165" text-anchor="middle" font-family="Arial" font-size="14">Gate Driver</text>
+                        
+                        <!-- Labels -->
+                        <text x="100" y="240" text-anchor="middle" font-family="Arial" font-size="12">CRMICRO</text>
+                        <text x="100" y="255" text-anchor="middle" font-family="Arial" font-size="12">Power Supply</text>
+                        
+                        <text x="230" y="240" text-anchor="middle" font-family="Arial" font-size="12">CRMICRO</text>
+                        <text x="230" y="255" text-anchor="middle" font-family="Arial" font-size="12">Power ICs</text>
+                        
+                        <text x="370" y="240" text-anchor="middle" font-family="Arial" font-size="12">CRMICRO</text>
+                        <text x="370" y="255" text-anchor="middle" font-family="Arial" font-size="12">IGBT/MOSFET</text>
+                        
+                        <text x="510" y="240" text-anchor="middle" font-family="Arial" font-size="12">CRMICRO</text>
+                        <text x="510" y="255" text-anchor="middle" font-family="Arial" font-size="12">Sensors</text>
+                        
+                        <text x="240" y="290" text-anchor="middle" font-family="Arial" font-size="12">CRMICRO</text>
+                        <text x="240" y="305" text-anchor="middle" font-family="Arial" font-size="12">Motor MCU</text>
+                        
+                        <text x="370" y="290" text-anchor="middle" font-family="Arial" font-size="12">CRMICRO</text>
+                        <text x="370" y="305" text-anchor="middle" font-family="Arial" font-size="12">Gate Driver</text>
+                    </svg>
+                </div>
+                <p class="diagram-caption">Typical BLDC drive block diagram showing CRMICRO components in power conversion and control</p>
+            </div>
+            
+            <h2>Core Components</h2>
+            <div class="components-grid">
+                <div class="component-card">
+                    <h3>Power Inverter</h3>
+                    <p>CRMICRO's IGBTs and MOSFETs provide efficient 3-phase inverter stages for BLDC and PMSM control. Optimized for both low and high power applications with appropriate switching characteristics.</p>
+                    <ul>
+                        <li>Efficient 3-phase inverter</li>
+                        <li>Low switching losses</li>
+                        <li>Thermal stability</li>
+                    </ul>
+                    <a href="/products/igbt/">CRMICRO IGBT Options</a>
+                </div>
+                <div class="component-card">
+                    <h3>Motor Control</h3>
+                    <p>CRMICRO's dedicated motor control MCUs feature integrated FOC engines, ADCs, and PWM generators optimized for FOC and 6-step control algorithms.</p>
+                    <ul>
+                        <li>Integrated FOC engine</li>
+                        <li>Optimized PWM control</li>
+                        <li>Fast ADC for feedback</li>
+                    </ul>
+                    <a href="/products/mcu/">CRMICRO MCU Options</a>
+                </div>
+                <div class="component-card">
+                    <h3>Sensing & Feedback</h3>
+                    <p>CRMICRO's position sensors and signal conditioning ICs provide accurate rotor position feedback for precise motor control algorithms.</p>
+                    <ul>
+                        <li>High-precision sensing</li>
+                        <li>Robust feedback</li>
+                        <li>Integrated signal conditioning</li>
+                    </ul>
+                    <a href="/products/sensors/">CRMICRO Sensor Options</a>
+                </div>
+            </div>
+            
+            <h2>Solution Advantages</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <h3>High Efficiency</h3>
+                    <p>CRMICRO's power semiconductors achieve >97% inverter efficiency, reducing thermal management requirements and energy consumption.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Precise Control</h3>
+                    <p>Advanced motor control algorithms with field-oriented control (FOC) for smooth, quiet operation and optimal torque generation.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Reliability</h3>
+                    <p>Robust design and protection features ensure long-term reliability in harsh industrial environments.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Compact Design</h3>
+                    <p>High power density allows for compact motor drive solutions, reducing system footprint and material costs.</p>
+                </div>
+            </div>
+            
+            <h2>Recommended BOM</h2>
+            <div class="bom-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Function</th>
+                            <th>CRMICRO Part</th>
+                            <th>Package</th>
+                            <th>Key Specs</th>
+                            <th>Benefits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Power Inverter</td>
+                            <td>CRMBSH30N65</td>
+                            <td>TO-247</td>
+                            <td>650V, 30A</td>
+                            <td>Low VCE(sat), high current</td>
+                        </tr>
+                        <tr>
+                            <td>Motor Control</td>
+                            <td>CRMMM32F062</td>
+                            <td>LQFP-64</td>
+                            <td>Cortex-M0, 128KB</td>
+                            <td>Integrated motor control peripherals</td>
+                        </tr>
+                        <tr>
+                            <td>Position Sensing</td>
+                            <td>CRMMS3030</td>
+                            <td>QFN-16</td>
+                            <td>3-axis accel</td>
+                            <td>Precise position detection</td>
+                        </tr>
+                        <tr>
+                            <td>Gate Driver</td>
+                            <td>CRMPM1000</td>
+                            <td>LQFP-48</td>
+                            <td>Integrated driver</td>
+                            <td>Protection features</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2>Application Areas</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3>Fan/Pump Control</h3>
+                    <p>CRMICRO motor drive solutions for HVAC fans, water pumps, and cooling systems offering precise speed control and energy savings.</p>
+                </div>
+                <div class="application-card">
+                    <h3>Servo Systems</h3>
+                    <p>High-performance servo drives for industrial automation and robotics with precise position, speed, and torque control.</p>
+                </div>
+                <div class="application-card">
+                    <h3>Appliance Control</h3>
+                    <p>Quiet, efficient motor drives for household appliances with reduced EMI and improved acoustic performance.</p>
+                </div>
+                <div class="application-card">
+                    <h3>Electric Vehicles</h3>
+                    <p>High-power motor drive systems for EV traction motors with advanced safety and control features.</p>
+                </div>
+            </div>
+            
+            <h2>Technical Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3><a href="/support/application-notes/">Application Notes</a></h3>
+                    <p>Technical documents on motor drive design with CRMICRO components.</p>
+                </div>
+                <div class="resource-card">
+                    <h3><a href="/support/selection-guides/">Selection Guide</a></h3>
+                    <p>How to choose the right CRMICRO devices for your motor control application.</p>
+                </div>
+                <div class="resource-card">
+                    <h3><a href="/contact/">Technical Support</a></h3>
+                    <p>Get direct support from our motor drive system experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Interested in CRMICRO Motor Drive Solutions?</h2>
+            <p>Our technical experts are ready to help with your design-in process and provide application-specific recommendations</p>
+            <a href="/contact/" class="btn-primary">Contact Our Motor Drive Team</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/products/mosfet/">MOSFETs</a></li>
+                        <li><a href="/products/igbt/">IGBTs</a></li>
+                        <li><a href="/products/si-gan/">SiC & GaN</a></li>
+                        <li><a href="/products/power-ic/">Power ICs</a></li>
+                        <li><a href="/products/sensors/">Sensors</a></li>
+                        <li><a href="/products/mcu/">MCUs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="/solutions/ev-charging/">EV Charging</a></li>
+                        <li><a href="/solutions/power-inverters/">Power Inverters</a></li>
+                        <li><a href="/solutions/motor-drives/">Motor Drives</a></li>
+                        <li><a href="/solutions/pd-chargers/">PD Chargers</a></li>
+                        <li><a href="/solutions/bms/">BMS Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/support/selection-guides/">Selection Guides</a></li>
+                        <li><a href="/support/application-notes/">Application Notes</a></li>
+                        <li><a href="/support/faq/">FAQ</a></li>
+                        <li><a href="/support/substitution/">Substitution Guide</a></li>
+                        <li><a href="/contact/">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>LiTong Electronics</p>
+                    <p>Authorized CRMICRO Distributor</p>
+                    <p><a href="mailto:info@elec-distributor.com">info@elec-distributor.com</a></p>
+                    <p>+852 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Electronics. Authorized Distributor for CR Micro (CRMICRO).</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

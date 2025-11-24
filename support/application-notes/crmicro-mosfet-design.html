@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMICRO MOSFET Design Guidelines | Application Note</title>
+    <meta name="description" content="Practical design guidelines for implementing CRMICRO MOSFETs in power conversion applications. Covers selection, thermal management, and gate drive considerations.">
+    <meta name="keywords" content="CRMICRO MOSFET, MOSFET design guidelines, power MOSFET design, gate drive, thermal management, power electronics">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="canonical" href="https://crmicro.elec-distributor.com/support/application-notes/crmicro-mosfet-design/">
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://crmicro.elec-distributor.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Support",
+        "item": "https://crmicro.elec-distributor.com/support/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Application Notes",
+        "item": "https://crmicro.elec-distributor.com/support/application-notes/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "MOSFET Design Guidelines",
+        "item": "https://crmicro.elec-distributor.com/support/application-notes/crmicro-mosfet-design/"
+      }]
+    }
+    </script>
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "CRMICRO MOSFET Design Guidelines",
+      "description": "Practical design guidelines for implementing CRMICRO MOSFETs in power conversion applications. Covers selection, thermal management, and gate drive considerations.",
+      "author": {
+        "@type": "Person",
+        "name": "LiTong Technical Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Electronics",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://crmicro.elec-distributor.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "articleBody": "This application note provides practical guidelines for implementing CRMICRO MOSFETs in power conversion applications."
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <object type="image/svg+xml" data="../../svg/logo.svg" width="180" height="40">
+                    <img src="../../images/logo-placeholder.png" alt="LiTong Logo - Authorized CRMICRO Distributor">
+                </object>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/solutions/">Solutions</a></li>
+                    <li><a href="/support/">Support</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> > <a href="/support/">Support</a> > <a href="/support/application-notes/">Application Notes</a> > <span>MOSFET Design Guidelines</span>
+        </div>
+    </div>
+
+    <!-- Application Note Content -->
+    <article class="technical-article">
+        <div class="container">
+            <h1>CRMICRO MOSFET Design Guidelines</h1>
+            <div class="article-meta">
+                <span class="author">By: LiTong Technical Team</span>
+                <span class="date">Published: January 15, 2025</span>
+                <span class="reading-time">Reading time: 8 minutes</span>
+            </div>
+            
+            <div class="article-intro">
+                <p>This application note provides practical guidelines for implementing CRMICRO MOSFETs in power conversion applications. It covers device selection, thermal management, gate drive design, and layout considerations to achieve optimal performance and reliability.</p>
+            </div>
+            
+            <h2>Introduction</h2>
+            <p>CRMICRO MOSFETs are designed to provide excellent performance across a wide range of power conversion applications. This document provides guidance on implementing these devices in practical circuits to achieve optimal performance and reliability.</p>
+            
+            <h2>MOSFET Selection Process</h2>
+            <p>Selecting the right MOSFET for your application requires careful consideration of several factors:</p>
+            
+            <h3>Voltage Rating</h3>
+            <p>The voltage rating should be chosen with sufficient margin above the maximum expected drain-to-source voltage in the application. As a general rule, select a device with a voltage rating at least 150% of the maximum expected voltage. For applications with significant voltage transients, consider even higher margins.</p>
+            
+            <h3>Current Rating</h3>
+            <p>The current rating must account for the maximum DC and RMS currents in your application. Pay attention to both continuous current handling capability and the device's SOA (Safe Operating Area) for pulsed current conditions.</p>
+            
+            <h3>On-Resistance (RDS(on))</h3>
+            <p>On-resistance directly affects conduction losses and system efficiency. Lower RDS(on) reduces losses but may increase die size and cost. Balance RDS(on) with switching losses based on your operating conditions.</p>
+            
+            <h3>Technology Considerations</h3>
+            <p>CRMICRO offers several MOSFET technologies optimized for different applications:</p>
+            <ul>
+                <li><strong>SGT (Shielded Gate Trench)</strong>: Optimal for high-frequency applications with best RDS(on) × Qg figure of merit</li>
+                <li><strong>SJ (Super Junction)</strong>: Best for high-voltage applications (600V+) with lowest RDS(on)</li>
+                <li><strong>Trench</strong>: Good balance for general-purpose applications</li>
+            </ul>
+            
+            <h2>Thermal Management</h2>
+            <p>Proper thermal management is critical for reliable operation and achieving projected performance:</p>
+            
+            <h3>Power Dissipation Calculation</h3>
+            <p>Total power dissipation includes conduction and switching losses:</p>
+            <p>P<sub>total</sub> = P<sub>cond</sub> + P<sub>switch</sub></p>
+            
+            <p>Conduction losses:</p>
+            <p>P<sub>cond</sub> = I<sub>RMS</sub><sup>2</sup> × R<sub>DS(on)</sub> × duty cycle</p>
+            
+            <p>Switching losses depend on operating conditions and device characteristics. See device datasheets for specific information.</p>
+            
+            <h3>Thermal Resistance</h3>
+            <p>The thermal resistance from junction to ambient (R<sub>θJA</sub>) is a critical parameter for thermal design:</p>
+            <p>T<sub>J</sub> = T<sub>A</sub> + P<sub>total</sub> × R<sub>θJA</sub></p>
+            
+            <p>Ensure that the junction temperature (T<sub>J</sub>) remains below the maximum rating specified in the device datasheet.</p>
+            
+            <h3>PCB Layout for Thermal Management</h3>
+            <p>Effective thermal management through the PCB requires:</p>
+            <ul>
+                <li>Adequate copper area connected to the device's thermal pad</li>
+                <li>Thermal vias to transfer heat to inner and back-side copper layers</li>
+                <li>Multi-layer PCBs for better heat spreading</li>
+                <li>Consideration of the final application's cooling method (natural convection, forced air, etc.)</li>
+            </ul>
+            
+            <h2>Gate Drive Design</h2>
+            <p>Proper gate drive design is essential for optimal MOSFET performance:</p>
+            
+            <h3>Gate Drive Voltage</h3>
+            <p>CRMICRO MOSFETs typically require a gate drive voltage of 10V to 15V for full enhancement. Avoid exceeding the maximum gate-to-source voltage rating (usually ±20V).</p>
+            
+            <h3>Gate Drive Current</h3>
+            <p>The gate driver must be capable of sourcing and sinking sufficient current to charge and discharge the gate capacitance quickly, reducing switching losses. The required current depends on the switching frequency and gate charge (Qg).</p>
+            
+            <h3>Gate Resistance</h3>
+            <p>External gate resistance (R<sub>G</sub>) affects switching speed and losses:</p>
+            <ul>
+                <li>Lower R<sub>G</sub> results in faster switching but may cause ringing</li>
+                <li>Higher R<sub>G</sub> reduces ringing but increases switching losses</li>
+                <li>Optimize R<sub>G</sub> based on your specific application requirements</li>
+            </ul>
+            
+            <h3>Gate Drive Circuits</h3>
+            <p>For high-performance applications, consider dedicated gate driver ICs that provide:</p>
+            <ul>
+                <li>Separate source and sink drive capabilities</li>
+                <li>Protection features like desaturation detection</li>
+                <li>Galvanic isolation if required</li>
+                <li>Adjustable drive strength</li>
+            </ul>
+            
+            <h2>Layout Guidelines</h2>
+            <p>Proper PCB layout is crucial for achieving the expected performance and maintaining system stability:</p>
+            
+            <h3>Minimize Parasitic Inductance</h3>
+            <p>Parasitic inductances in the power loop can cause voltage overshoots and ringing:</p>
+            <ul>
+                <li>Keep high-current loops as small as possible</li>
+                <li>Use multiple vias for high-current connections</li>
+                <li>Place decoupling capacitors close to the MOSFET</li>
+                <li>Utilize copper planes for power return paths when possible</li>
+            </ul>
+            
+            <h3>Gate Drive Loop</h3>
+            <p>The gate drive loop should also be minimized to reduce ringing and EMI:</p>
+            <ul>
+                <li>Keep gate drive components close to the MOSFET</li>
+                <li>Use tight routing for gate signals</li>
+                <li>Separate gate drive and power loops to prevent coupling</li>
+            </ul>
+            
+            <h2>Protection Considerations</h2>
+            <p>Implementing protection circuits is important for reliable operation:</p>
+            
+            <h3>Overcurrent Protection</h3>
+            <p>Implement current limiting or shut-off to protect the MOSFET during fault conditions. This can be achieved through:</p>
+            <ul>
+                <li>Sense resistor with comparator</li>
+                <li>Active current monitoring in the controller</li>
+                <li>Desaturation detection (for hard switching applications)</li>
+            </ul>
+            
+            <h3>Overtemperature Protection</h3>
+            <p>Monitor device temperature and implement thermal shutdown if safe operating limits are exceeded.</p>
+            
+            <h3>Overvoltage Protection</h3>
+            <p>Protect against voltage transients that may exceed the device rating using snubber circuits or active clamps.</p>
+            
+            <h2>CRMICRO MOSFET Product Series</h2>
+            <p>CRMICRO offers several MOSFET series optimized for different applications:</p>
+            
+            <h3>SGT Series</h3>
+            <p>CRMICRO's Shielded Gate Trench MOSFETs offer the best balance of on-resistance and gate charge for high-frequency applications. Ideal for LLC resonant converters and high-efficiency adapters.</p>
+            
+            <h3>SJ Series</h3>
+            <p>Super Junction MOSFETs provide the lowest on-resistance for high-voltage applications, making them ideal for PFC boost circuits and high-voltage adapters.</p>
+            
+            <h3>Trench Series</h3>
+            <p>Standard trench MOSFETs offer a good balance of performance and cost for general-purpose power conversion applications.</p>
+            
+            <h2>Design Tools and Resources</h2>
+            <p>CRMICRO provides design tools and resources to assist with your implementation:</p>
+            
+            <ul>
+                <li>SPICE models for simulation of CRMICRO devices</li>
+                <li>Reference designs for common applications</li>
+                <li>Application notes covering specific implementation topics</li>
+                <li>Design calculators for common parameters</li>
+                <li>Technical support from our application engineering team</li>
+            </ul>
+            
+            <h2>Testing and Validation</h2>
+            <p>Proper testing ensures design reliability:</p>
+            
+            <h3>Electrical Testing</h3>
+            <ul>
+                <li>Static electrical tests at room and elevated temperatures</li>
+                <li>Dynamic switching performance validation</li>
+                <li>Efficiency measurements across operating range</li>
+            </ul>
+            
+            <h3>Thermal Validation</h3>
+            <ul>
+                <li>Temperature measurements under worst-case conditions</li>
+                <li>Thermal imaging to identify hot spots</li>
+                <li>Power cycling for long-term reliability assessment</li>
+            </ul>
+            
+            <div class="fae-comment">
+                <h3>Technical Note from our FAE</h3>
+                <p>When designing with CRMICRO's SGT series for LLC resonant converters, it's crucial to optimize the gate resistance for your specific switching frequency. Start with the recommended value in the datasheet, then fine-tune based on measured switching performance. For PFC applications using SJ MOSFETs, ensure the gate driver can handle the larger gate charge while maintaining fast switching for high efficiency. We recommend using our provided SPICE models for initial simulation and validation before hardware prototyping.</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="related-content">
+        <div class="container">
+            <h2>Related Technical Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3><a href="/support/selection-guides/mosfet-selection/">MOSFET Selection Guide</a></h3>
+                    <p>How to choose the right MOSFET for your specific application requirements.</p>
+                </div>
+                <div class="resource-card">
+                    <h3><a href="/products/mosfet/">CRMICRO MOSFET Products</a></h3>
+                    <p>Explore our complete portfolio of MOSFET solutions across all technologies.</p>
+                </div>
+                <div class="resource-card">
+                    <h3><a href="/solutions/pd-chargers/">PD Charger Solutions</a></h3>
+                    <p>Examples of MOSFET implementation in fast charging applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Need Help with Your MOSFET Design?</h2>
+            <p>Our expert FAEs can guide you through the design process for your specific application</p>
+            <a href="/contact/" class="btn-primary">Contact Our FAE Team</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/products/mosfet/">MOSFETs</a></li>
+                        <li><a href="/products/igbt/">IGBTs</a></li>
+                        <li><a href="/products/si-gan/">SiC & GaN</a></li>
+                        <li><a href="/products/power-ic/">Power ICs</a></li>
+                        <li><a href="/products/sensors/">Sensors</a></li>
+                        <li><a href="/products/mcu/">MCUs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="/solutions/ev-charging/">EV Charging</a></li>
+                        <li><a href="/solutions/power-inverters/">Power Inverters</a></li>
+                        <li><a href="/solutions/motor-drives/">Motor Drives</a></li>
+                        <li><a href="/solutions/pd-chargers/">PD Chargers</a></li>
+                        <li><a href="/solutions/bms/">BMS Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/support/selection-guides/">Selection Guides</a></li>
+                        <li><a href="/support/application-notes/">Application Notes</a></li>
+                        <li><a href="/support/faq/">FAQ</a></li>
+                        <li><a href="/support/substitution/">Substitution Guide</a></li>
+                        <li><a href="/contact/">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>LiTong Electronics</p>
+                    <p>Authorized CRMICRO Distributor</p>
+                    <p><a href="mailto:info@elec-distributor.com">info@elec-distributor.com</a></p>
+                    <p>+852 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Electronics. Authorized Distributor for CR Micro (CRMICRO).</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

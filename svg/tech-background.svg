@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 600">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#1a4da1"/>
+  
+  <!-- Circuit pattern -->
+  <g stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none">
+    <!-- Horizontal lines -->
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    
+    <!-- Vertical lines -->
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+    <line x1="900" y1="0" x2="900" y2="600"/>
+    <line x1="1000" y1="0" x2="1000" y2="600"/>
+    <line x1="1100" y1="0" x2="1100" y2="600"/>
+  </g>
+  
+  <!-- Circuit nodes -->
+  <g fill="rgba(255,255,255,0.2)">
+    <circle cx="100" cy="100" r="5"/>
+    <circle cx="200" cy="200" r="5"/>
+    <circle cx="300" cy="300" r="5"/>
+    <circle cx="400" cy="400" r="5"/>
+    <circle cx="500" cy="500" r="5"/>
+    <circle cx="600" cy="100" r="5"/>
+    <circle cx="700" cy="200" r="5"/>
+    <circle cx="800" cy="300" r="5"/>
+    <circle cx="900" cy="400" r="5"/>
+    <circle cx="1000" cy="500" r="5"/>
+    <circle cx="1100" cy="100" r="5"/>
+    <circle cx="100" cy="500" r="5"/>
+    <circle cx="1100" cy="500" r="5"/>
+  </g>
+  
+  <!-- Abstract shapes -->
+  <g fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5">
+    <circle cx="200" cy="150" r="80"/>
+    <circle cx="1000" cy="450" r="100"/>
+    <rect x="600" y="250" width="100" height="100" transform="rotate(45 650 300)"/>
+  </g>
+  
+  <!-- Diagonal connecting lines -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="0" y1="0" x2="1200" y2="600"/>
+    <line x1="0" y1="600" x2="1200" y2="0"/>
+    <line x1="200" y1="0" x2="1200" y2="500"/>
+    <line x1="0" y1="100" x2="1000" y2="600"/>
+    <line x1="400" y1="0" x2="1200" y2="400"/>
+    <line x1="0" y1="200" x2="800" y2="600"/>
+  </g>
+</svg>
