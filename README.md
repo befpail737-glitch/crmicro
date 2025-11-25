@@ -88,3 +88,8 @@ To add new content:
 
 ## License
 This website is proprietary to LiTong Electronics. All content is copyrighted.
+
+---
+
+## Deployment History
+- **2025-11-24 21:00 UTC+8**: Force deployment trigger - Added images directory (19 files) and SVG assets
