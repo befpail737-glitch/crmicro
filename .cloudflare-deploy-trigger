@@ -1,0 +1,5 @@
+Deploy Trigger: 2025-11-24 21:30:00
+Commit: 6a3895a
+Purpose: Force Cloudflare Pages to redeploy with images directory
+Images: 19 files
+Status: Production deployment required
