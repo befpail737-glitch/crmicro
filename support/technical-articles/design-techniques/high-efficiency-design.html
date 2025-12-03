@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Electronics Design: CRMicro Solutions for High-Efficiency Applications | Technical Article</title>
+    <meta name="description" content="Comprehensive guide to high-efficiency power electronics design using CRMicro components. Covers topology selection, component optimization, and efficiency maximization techniques.">
+    <meta name="keywords" content="power electronics design, high efficiency, CRMicro solutions, power topology, efficiency optimization, power converter design, switching power supplies">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Power Electronics Design: CRMicro Solutions for High-Efficiency Applications">
+    <meta property="og:description" content="Comprehensive guide to high-efficiency power electronics design using CRMicro components.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://crmicro.elec-distributor.com/support/technical-articles/high-efficiency-design/">
+    
+    <!-- Structured Data - Breadcrumb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://crmicro.elec-distributor.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Support",
+        "item": "https://crmicro.elec-distributor.com/support/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Technical Articles",
+        "item": "https://crmicro.elec-distributor.com/support/technical-articles/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "High-Efficiency Design",
+        "item": "https://crmicro.elec-distributor.com/support/technical-articles/high-efficiency-design/"
+      }]
+    }
+    </script>
+    
+    <!-- Structured Data - Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Power Electronics Design: CRMicro Solutions for High-Efficiency Applications",
+      "description": "Comprehensive guide to high-efficiency power electronics design using CRMicro components",
+      "author": {
+        "@type": "Person",
+        "name": "Jane Smith, M.Eng.",
+        "jobTitle": "Senior Application Engineer"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CRMicro Official Distributor",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://crmicro.elec-distributor.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "articleBody": "This comprehensive guide covers high-efficiency power electronics design techniques using CRMicro components, including topology selection, component optimization, and efficiency maximization strategies."
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">CRMicro Distributor</a>
+            
+            <nav class="nav-menu">
+                <a href="/">Home</a>
+                <a href="/products/">Products</a>
+                <a href="/solutions/">Solutions</a>
+                <a href="/support/" class="active">Support</a>
+                <a href="/news/">News</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            
+            <a href="/contact/" class="cta-button">Request Quote</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/">Home</a> / <a href="/support/">Support</a> / <a href="/support/technical-articles/">Technical Articles</a> / <span>High-Efficiency Design</span>
+        </div>
+    </div>
+
+    <!-- Article Hero -->
+    <section class="hero" style="height: 400px; background: linear-gradient(135deg, #0d9488, #14b8a6);">
+        <div class="hero-content">
+            <h1>Power Electronics Design: CRMicro Solutions for High-Efficiency Applications</h1>
+            <p>Comprehensive guide to maximizing efficiency with CRMicro components</p>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-2xl">
+        <div class="container" style="max-width: 900px;">
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E7EB; padding-bottom: var(--space-m); margin-bottom: var(--space-xl);">
+                    <div>
+                        <h2>Power Electronics Design: CRMicro Solutions for High-Efficiency Applications</h2>
+                        <p>By Jane Smith, M.Eng., Senior Application Engineer</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p>January 15, 2025</p>
+                        <p style="color: var(--neutral-gray);">Reading time: 14 min</p>
+                    </div>
+                </div>
+
+                <div style="line-height: var(--leading-relaxed);">
+                    <p>Power electronics efficiency has become increasingly critical in modern applications, driven by environmental regulations, sustainability initiatives, and cost-saving demands. CRMicro's comprehensive portfolio of power semiconductors enables designers to achieve exceptional efficiency across various power conversion applications. This guide explores techniques for maximizing efficiency using CRMicro components.</p>
+
+                    <h3 class="mt-2xl">Fundamentals of Power Conversion Efficiency</h3>
+                    <p>Efficiency (η) in power conversion is defined as:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        η = P<sub>OUT</sub> / P<sub>IN</sub> = (P<sub>IN</sub> - P<sub>LOSS</sub>) / P<sub>IN</sub>
+                    </p>
+
+                    <p>Total power losses in power conversion systems comprise multiple sources:</p>
+                    <ol style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Conduction losses</strong> - Resistive losses in power semiconductors and passive components</li>
+                        <li><strong>Switching losses</strong> - Energy lost during turn-on and turn-off transitions</li>
+                        <li><strong>Magnetic losses</strong> - Hysteresis and eddy current losses in magnetic components</li>
+                        <li><strong>Capacitive losses</strong> - Dielectric losses in capacitors</li>
+                        <li><strong>Gate drive losses</strong> - Power consumed by driving gates of FETs and IGBTs</li>
+                    </ol>
+
+                    <p>Minimizing these losses requires careful component selection, optimal design techniques, and understanding of device characteristics.</p>
+
+                    <h3 class="mt-2xl">CRMicro Component Advantages for High Efficiency</h3>
+                    <p>CRMicro's power semiconductor portfolio is engineered to maximize efficiency across various applications:</p>
+
+                    <h4>Low R<sub>DS(on)</sub> MOSFETs</h4>
+                    <p>CRMicro's SGT (Shielded Gate Trench) and SJ (Super Junction) MOSFET technologies achieve industry-leading figures of merit (FOM):</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>SGT MOSFETs</strong>: Lowest R<sub>DS(on)</sub> × Q<sub>g</sub> for low-voltage applications (12V-200V)</li>
+                        <li><strong>SJ MOSFETs</strong>: Optimal R<sub>DS(on)</sub> × E<sub>oss</sub> for high-voltage applications (600V-800V), ideal for PFC and adapter applications</li>
+                    </ul>
+
+                    <p>CRMicro's 650V SJ MOSFETs offer R<sub>DS(on)</sub> values down to 65mΩ in TO-247 packages, enabling conduction losses of less than 1W in 2kW PFC applications.</p>
+
+                    <h4>Advanced IGBT Technology</h4>
+                    <p>CRMicro IGBTs incorporate field-stop technology to optimize the conduction-switching loss trade-off:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Lower V<sub>CE(sat)</sub> for reduced conduction losses</li>
+                        <li>Optimized tail current for reduced turn-off losses</li>
+                        <li>Improved short-circuit ruggedness for reliable operation</li>
+                    </ul>
+
+                    <h4>Wide Bandgap Solutions</h4>
+                    <p>CRMicro's SiC and GaN devices offer significant efficiency advantages:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>SiC MOSFETs</strong>: Zero recovery charge, enabling higher frequency operation with reduced switching losses</li>
+                        <li><strong>SiC Schottky Diodes</strong>: Zero recovery charge, eliminating reverse recovery losses in various topologies</li>
+                        <li><strong>GaN HEMTs</strong>: Ultra-low output capacitance, ideal for high-frequency applications</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Topology Selection for Maximum Efficiency</h3>
+
+                    <h4>Power Factor Correction (PFC)</h4>
+                    <p>For universal input PFC applications:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Continuous Conduction Mode (CCM)</strong> using CRMicro 650V SJ MOSFETs offers excellent efficiency at moderate power levels (200W-3kW)</li>
+                        <li><strong>Critical Conduction Mode (CrCM)</strong> using CRMicro SGT MOSFETs provides high efficiency at light loads</li>
+                        <li><strong>Interleaved PFC</strong> using multiple CRMicro devices reduces ripple current and improves efficiency</li>
+                    </ul>
+
+                    <h4>DC-DC Conversion</h4>
+                    <p>For isolated DC-DC applications:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Forward converters</strong> using CRMicro MOSFETs for low to medium power applications (50W-300W)</li>
+                        <li><strong>Half-bridge topology</strong> using CRMicro IGBTs for higher power levels (500W-5kW)</li>
+                        <li><strong>LLC resonant converters</strong> using CRMicro SiC MOSFETs for zero-voltage switching (ZVS) operation</li>
+                        <li><strong>Phase-shift full-bridge</strong> using CRMicro IGBTs for high-power applications</li>
+                    </ul>
+
+                    <h4>Non-Isolated DC-DC</h4>
+                    <p>For point-of-load applications:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Synchronous buck</strong> using CRMicro SGT MOSFETs for high-efficiency conversion at low voltages</li>
+                        <li><strong>Multi-phase operation</strong> using CRMicro small-package MOSFETs for high-current applications</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Design Techniques for Efficiency Optimization</h3>
+
+                    <h4>Minimizing Conduction Losses</h4>
+                    <p>Conduction losses dominate in low-frequency applications and can be minimized through:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Device selection</strong>: Choose lowest R<sub>DS(on)</sub> or V<sub>CE(sat)</sub> within package and cost constraints</li>
+                        <li><strong>Parallel operation</strong>: Paralleling CRMicro devices reduces effective R<sub>DS(on)</sub> (MOSFETs) or V<sub>CE(sat)</sub> (IGBTs)</li>
+                        <li><strong>Package selection</strong>: TO-247 and D2PAK offer lowest thermal resistance to reduce temperature-related increases in conduction losses</li>
+                        <li><strong>Thermal management</strong>: Effective heatsinking keeps devices cool, maintaining low on-resistance</li>
+                    </ul>
+
+                    <h4>Minimizing Switching Losses</h4>
+                    <p>Switching losses become more significant at higher frequencies and can be reduced by:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>ZVS/ZCS techniques</strong>: Implement soft-switching topologies using CRMicro SiC devices to virtually eliminate switching losses</li>
+                        <li><strong>Optimized gate drive</strong>: Proper gate resistor selection to minimize switching time while controlling ringing</li>
+                        <li><strong>Dead time optimization</strong>: Minimizing body diode conduction time in synchronous topologies using CRMicro low-Q<sub>rr</sub> devices</li>
+                        <li><strong>Frequency selection</strong>: Balancing switching and magnetic losses for optimal efficiency at specific operating points</li>
+                    </ul>
+
+                    <h4>Minimizing Magnetic Losses</h4>
+                    <p>Although related to external components, magnetic losses can be minimized through:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Frequency optimization</strong>: Higher frequencies allow smaller magnetics but increase core losses</li>
+                        <li><strong>Waveform shaping</strong>: Using CRMicro devices to shape current waveforms and reduce RMS values</li>
+                        <li><strong>Interleaving</strong>: Multiple-phase operation using CRMicro devices reduces ripple current and magnetic losses</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">CRMicro-Specific Design Examples</h3>
+
+                    <h4>65W USB-PD Adapter Design (230V AC Input)</h4>
+                    <p>Using CRMicro SGT and SiC devices for >94% efficiency:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>PFC Stage</strong>: CRMicro 650V SJ MOSFET for high-efficiency boost conversion</li>
+                        <li><strong>Adapter Primary</strong>: CRMicro 650V SGT MOSFET for synchronous flyback operation</li>
+                        <li><strong>Synchronous Rectifier</strong>: CRMicro low-side MOSFET for efficient secondary rectification</li>
+                        <li><strong>SiC Diode</strong>: Zero recovery charge device in PFC for maximum efficiency</li>
+                    </ul>
+
+                    <div style="background: var(--light-gray); padding: var(--space-xl); border-radius: var(--radius-md); margin: var(--space-xl) 0; border-left: 4px solid var(--accent-blue);">
+                        <h4>CRMicro Design Tip</h4>
+                        <p>In USB-PD applications, CRMicro's dual MOSFET solutions integrate both primary and synchronous rectification switches in a single package, reducing component count and parasitics for improved efficiency.</p>
+                    </div>
+
+                    <h4>3.6kW On-Board Charger for EVs</h4>
+                    <p>Using CRMicro IGBTs and SiC components:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>PFC Stage</strong>: CRMicro 1200V IGBTs for robust high-power factor correction</li>
+                        <li><strong>DC-DC Stage</strong>: CRMicro LLC topology with SiC MOSFETs for ZVS operation</li>
+                        <li><strong>Thermal design</strong>: Optimized for continuous high-power operation using CRMicro's thermal management guidelines</li>
+                    </ul>
+
+                    <h4>High-Power Solar Inverter (10kW String Inverter)</h4>
+                    <p>Using CRMicro SiC technology for superior performance:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Power stage</strong>: CRMicro SiC MOSFETs for high-frequency operation with minimal losses</li>
+                        <li><strong>Diodes</strong>: CRMicro SiC Schottky diodes for zero recovery loss</li>
+                        <li><strong>Topology</strong>: 6-level inverter using CRMicro devices for reduced switching stress</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Efficiency Measurement and Verification</h3>
+                    <p>Accurate efficiency measurement is crucial for validating design optimizations:</p>
+
+                    <h4>Measurement Setup</h4>
+                    <p>For accurate efficiency measurements:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Use calibrated power analyzers for input and output power measurement</li>
+                        <li>Account for measurement uncertainty in accuracy calculations</li>
+                        <li>Test at various load conditions (10%, 25%, 50%, 75%, 100%)</li>
+                        <li>Verify performance at worst-case temperature conditions</li>
+                    </ul>
+
+                    <h4>Loss Breakdown Analysis</h4>
+                    <p>Understanding loss distribution helps identify improvement opportunities:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Separate conduction and switching losses by varying frequency</li>
+                        <li>Measure individual component losses where possible</li>
+                        <li>Use thermal imaging to identify hotspots</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Advanced Efficiency Techniques</h3>
+
+                    <h4>Adaptive Dead Time Control</h4>
+                    <p>Implementing adaptive dead time using CRMicro device characteristics:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Dynamically adjust dead time based on load conditions</li>
+                        <li>Minimize body diode conduction time without shoot-through risk</li>
+                        <li>Use CRMicro devices with predictable threshold characteristics</li>
+                    </ul>
+
+                    <h4>Dynamic Voltage Scaling</h4>
+                    <p>Adjusting voltage levels based on load requirements:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Lower bus voltage at light loads to reduce switching losses</li>
+                        <li>Utilize CRMicro devices with appropriate voltage ratings</li>
+                        <li>Implement smooth transitions to avoid transients</li>
+                    </ul>
+
+                    <h4>Multi-Phase Interleaving</h4>
+                    <p>For high-current applications using CRMicro devices:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Reduce input/output ripple current</li>
+                        <li>Distribute losses across multiple phases</li>
+                        <li>Implement with CRMicro MOSFETs in small packages for compact design</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">EMI Considerations in High-Efficiency Designs</h3>
+                    <p>High-efficiency designs often use faster switching, which can increase EMI. Considerations include:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Soft switching</strong>: ZVS and ZCS techniques using CRMicro SiC devices reduce EMI compared to hard switching</li>
+                        <li><strong>Spread spectrum</strong>: Modulating switching frequency to spread EMI energy</li>
+                        <li><strong>GaN devices</strong>: CRMicro GaN devices offer extremely fast switching but require careful layout</li>
+                        <li><strong>Layout optimization</strong>: Minimize loop areas and use proper ground planes</li>
+                    </ul>
+
+                    <div class="mt-2xl" style="background: var(--light-gray); padding: var(--space-xl); border-radius: var(--radius-md); border-left: 4px solid var(--success-green);">
+                        <h4>Efficiency Achievement</h4>
+                        <p>Using CRMicro's comprehensive portfolio, designers have achieved:</p>
+                        <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                            <li>95%+ efficiency in 65W USB-PD adapters</li>
+                            <li>99%+ efficiency in solar inverters using SiC technology</li>
+                            <li>98%+ efficiency in 3.6kW EV on-board chargers</li>
+                            <li>97%+ efficiency in high-power industrial power supplies</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="mt-2xl">Future Efficiency Trends</h3>
+                    <p>Emerging technologies and design techniques:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Advanced SiC</strong>: Next-generation CRMicro SiC devices with improved gate oxide reliability</li>
+                        <li><strong>Hybrid solutions</strong>: Combining different device types for optimal performance</li>
+                        <li><strong>AI-assisted design</strong>: Using machine learning to optimize designs</li>
+                        <li><strong>Gallium Oxide (Ga2O3)</strong>: Future ultra-wide bandgap technology beyond SiC</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Conclusion</h3>
+                    <p>Maximizing efficiency in power electronics applications requires a holistic approach combining optimal component selection, appropriate topology choice, and advanced design techniques. CRMicro's comprehensive portfolio provides the building blocks for achieving exceptional efficiency across diverse applications.</p>
+
+                    <p>Key success factors for high-efficiency design include:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Understanding the trade-offs between conduction and switching losses</li>
+                        <li>Selecting the appropriate semiconductor technology for the application</li>
+                        <li>Implementing advanced techniques like soft switching where beneficial</li>
+                        <li>Optimizing thermal management for consistent performance</li>
+                        <li>Validating designs through comprehensive testing</li>
+                    </ul>
+
+                    <p>With continued advances in CRMicro technology, including next-generation SiC and GaN devices, the possibilities for achieving even higher efficiency in power electronics continue to expand.</p>
+                </div>
+
+                <div class="hero-buttons" style="justify-content: flex-start; margin-top: var(--space-xl); border-top: 1px solid #E5E7EB; padding-top: var(--space-xl);">
+                    <a href="/products/" class="secondary-button">CRMicro Products</a>
+                    <a href="/solutions/" class="secondary-button">Solution Examples</a>
+                    <a href="/contact/" class="cta-button" style="margin-left: var(--space-m);">Contact FAE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="py-2xl" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="text-center mb-2xl">Related Articles</h2>
+            <div class="solutions-grid">
+                <div class="card">
+                    <h3>Topology Selection Guide</h3>
+                    <p>Choosing the right converter topology for your application</p>
+                    <a href="/support/technical-articles/topology-selection/" class="secondary-button">Read Article</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Magnetic Design for Power Electronics</h3>
+                    <p>Optimizing inductors and transformers for efficiency</p>
+                    <a href="/support/technical-articles/magnetic-design/" class="secondary-button">Read Article</a>
+                </div>
+                
+                <div class="card">
+                    <h3>EMI Reduction Techniques</h3>
+                    <p>Minimizing electromagnetic interference in switching power supplies</p>
+                    <a href="/support/technical-articles/emi-reduction/" class="secondary-button">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CRMicro Distributor</h3>
+                <p>Authorized distributor for CRMicro power semiconductors, providing genuine products, technical expertise, and global support.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/solutions/">Solutions</a></li>
+                    <li><a href="/support/">Support</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="/products/mosfets/">MOSFETs</a></li>
+                    <li><a href="/products/igbts/">IGBTs</a></li>
+                    <li><a href="/products/wide-bandgap/">Wide Bandgap</a></li>
+                    <li><a href="/products/power-ics/">Power ICs</a></li>
+                    <li><a href="/products/smart-sensors/">Smart Sensors</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@crmicro.elec-distributor.com</p>
+                <p>Phone: +86-XXX-XXXX-XXXX</p>
+                <p>Global Sales Network</p>
+            </div>
+        </div>
+        
+        <div class="container text-center" style="margin-top: var(--space-xl); padding-top: var(--space-xl); border-top: 1px solid rgba(255,255,255,0.1);">
+            <p>&copy; 2025 CRMicro Official Distributor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- SVG banner for SiC technology -->
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sicBannerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#sicBannerGradient)"/>
+  <circle cx="300" cy="100" r="70" fill="rgba(255,255,255,0.1)" />
+  <circle cx="900" cy="250" r="50" fill="rgba(255,255,255,0.1)" />
+  <path d="M500,150 L550,100 L600,150 L550,200 Z" fill="rgba(255,255,255,0.2)" />
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="36" fill="white">SiC Technology Advantages</text>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)">Higher Efficiency • Better Thermal Performance • Faster Switching</text>
+</svg>

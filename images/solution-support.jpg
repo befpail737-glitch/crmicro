@@ -1,0 +1,68 @@
+<!-- Solution support image -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" fill="#1f2937" text-anchor="middle">Solution Support Resources</text>
+  
+  <!-- Solution Areas -->
+  <g transform="translate(100, 100)">
+    <!-- Automotive -->
+    <rect x="0" y="0" width="180" height="150" fill="#ef4444" stroke="#dc2626" stroke-width="3" rx="10"/>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Automotive</text>
+    <text x="90" y="70" font-family="Arial, sans-serif" font-size="14" fill="#fecaca" text-anchor="middle">EV, BMS,</text>
+    <text x="90" y="90" font-family="Arial, sans-serif" font-size="14" fill="#fecaca" text-anchor="middle">Charging</text>
+    <text x="90" y="120" font-family="Arial, sans-serif" font-size="12" fill="#fca5a5" text-anchor="middle">Safety Systems</text>
+  </g>
+  
+  <!-- Industrial -->
+  <g transform="translate(300, 100)">
+    <rect x="0" y="0" width="180" height="150" fill="#0ea5e9" stroke="#0284c7" stroke-width="3" rx="10"/>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Industrial</text>
+    <text x="90" y="70" font-family="Arial, sans-serif" font-size="14" fill="#bae6fd" text-anchor="middle">Motor Drives,</text>
+    <text x="90" y="90" font-family="Arial, sans-serif" font-size="14" fill="#bae6fd" text-anchor="middle">Power Supplies</text>
+    <text x="90" y="120" font-family="Arial, sans-serif" font-size="12" fill="#7dd3fc" text-anchor="middle">Factory Automation</text>
+  </g>
+  
+  <!-- Consumer -->
+  <g transform="translate(500, 100)">
+    <rect x="0" y="0" width="180" height="150" fill="#8b5cf6" stroke="#7e22ce" stroke-width="3" rx="10"/>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Consumer</text>
+    <text x="90" y="70" font-family="Arial, sans-serif" font-size="14" fill="#ddd6fe" text-anchor="middle">Chargers,</text>
+    <text x="90" y="90" font-family="Arial, sans-serif" font-size="14" fill="#ddd6fe" text-anchor="middle">PD, Fast Charge</text>
+    <text x="90" y="120" font-family="Arial, sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle">Portable Devices</text>
+  </g>
+  
+  <!-- Energy -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="180" height="150" fill="#10b981" stroke="#059669" stroke-width="3" rx="10"/>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Energy</text>
+    <text x="90" y="70" font-family="Arial, sans-serif" font-size="14" fill="#a7f3d0" text-anchor="middle">Solar Inverters,</text>
+    <text x="90" y="90" font-family="Arial, sans-serif" font-size="14" fill="#a7f3d0" text-anchor="middle">Storage Systems</text>
+    <text x="90" y="120" font-family="Arial, sans-serif" font-size="12" fill="#6ee7b7" text-anchor="middle">Power Grid</text>
+  </g>
+  
+  <!-- IoT -->
+  <g transform="translate(300, 280)">
+    <rect x="0" y="0" width="180" height="150" fill="#14b8a6" stroke="#0d9488" stroke-width="3" rx="10"/>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">IoT & Smart</text>
+    <text x="90" y="60" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Devices</text>
+    <text x="90" y="90" font-family="Arial, sans-serif" font-size="14" fill="#a7f3d0" text-anchor="middle">Sensors, Modules</text>
+    <text x="90" y="120" font-family="Arial, sans-serif" font-size="12" fill="#67e8f9" text-anchor="middle">Connectivity Solutions</text>
+  </g>
+  
+  <!-- Telecommunications -->
+  <g transform="translate(500, 280)">
+    <rect x="0" y="0" width="180" height="150" fill="#f59e0b" stroke="#d97706" stroke-width="3" rx="10"/>
+    <text x="90" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Telecom</text>
+    <text x="90" y="60" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">& Datacenter</text>
+    <text x="90" y="90" font-family="Arial, sans-serif" font-size="14" fill="#fde68a" text-anchor="middle">Power Supplies,</text>
+    <text x="90" y="110" font-family="Arial, sans-serif" font-size="14" fill="#fde68a" text-anchor="middle">PFC Circuits</text>
+    <text x="90" y="130" font-family="Arial, sans-serif" font-size="12" fill="#fcd34d" text-anchor="middle">Efficiency Focused</text>
+  </g>
+  
+  <!-- Solution Process -->
+  <g transform="translate(100, 460)">
+    <rect width="600" height="100" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="10"/>
+    <text x="300" y="490" font-family="Arial, sans-serif" font-size="18" fill="#0c4a6e" text-anchor="middle">How We Support Your Solutions</text>
+    <text x="300" y="520" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a" text-anchor="middle">Application Notes • Reference Designs • Technical Consultation • Custom Solutions</text>
+  </g>
+</svg>

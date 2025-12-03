@@ -1,0 +1,41 @@
+<!-- MCU Review Diagram -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#1f2937" text-anchor="middle">CRMicro MCU Architecture Review</text>
+  
+  <!-- MCU Core -->
+  <g transform="translate(200, 150)">
+    <rect width="400" height="300" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="3" rx="15"/>
+    
+    <!-- CPU Core -->
+    <rect x="50" y="50" width="100" height="60" fill="#ffffff" stroke="#1f2937" stroke-width="2" rx="5"/>
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle">ARM</text>
+    <text x="100" y="105" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Cortex-M</text>
+    
+    <!-- Memory -->
+    <rect x="250" y="50" width="100" height="60" fill="#ffffff" stroke="#1f2937" stroke-width="2" rx="5"/>
+    <text x="300" y="85" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle">Flash</text>
+    <text x="300" y="105" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">RAM</text>
+    
+    <!-- Peripherals -->
+    <rect x="50" y="150" width="300" height="100" fill="#ffffff" stroke="#1f2937" stroke-width="2" rx="5"/>
+    <text x="200" y="175" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="middle">ADC • Timer • PWM • UART • I2C • SPI</text>
+    <text x="200" y="195" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="middle">CAN • USB • GPIO</text>
+    <text x="200" y="215" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="middle">Analog Comparators • DAC</text>
+    
+    <!-- I/O Ports -->
+    <circle cx="20" y="200" r="15" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="20" y="205" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">I/O</text>
+    
+    <circle cx="380" y="200" r="15" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="380" y="205" font-family="Arial, sans-serif" font-size="10" fill="#92400e" text-anchor="middle">I/O</text>
+    
+    <!-- Power domains -->
+    <rect x="30" y="250" width="150" height="30" fill="#fee2e2" stroke="#dc2626" stroke-width="1" rx="3"/>
+    <text x="105" y="270" font-family="Arial, sans-serif" font-size="10" fill="#991b1b" text-anchor="middle">Power Mgmt Unit</text>
+    
+    <!-- Title -->
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#0c4a6e" text-anchor="middle">CRMicro MCU Family</text>
+    <text x="200" y="45" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">High-performance, low-power solutions</text>
+  </g>
+</svg>

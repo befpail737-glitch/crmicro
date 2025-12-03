@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Thermal Management for Power Electronics | Technical Article</title>
+    <meta name="description" content="Comprehensive guide to thermal management in power electronics using CRMicro components. Covers thermal design, heatsink selection, and cooling methods.">
+    <meta name="keywords" content="thermal management, power electronics, heatsink design, thermal resistance, cooling, power semiconductors, CRMicro">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Advanced Thermal Management for Power Electronics">
+    <meta property="og:description" content="Comprehensive guide to thermal management in power electronics using CRMicro components.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://crmicro.elec-distributor.com/support/technical-articles/thermal-management/">
+    
+    <!-- Structured Data - Breadcrumb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://crmicro.elec-distributor.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Support",
+        "item": "https://crmicro.elec-distributor.com/support/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Technical Articles",
+        "item": "https://crmicro.elec-distributor.com/support/technical-articles/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Thermal Management",
+        "item": "https://crmicro.elec-distributor.com/support/technical-articles/thermal-management/"
+      }]
+    }
+    </script>
+    
+    <!-- Structured Data - Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Advanced Thermal Management for Power Electronics",
+      "description": "Comprehensive guide to thermal management in power electronics using CRMicro components",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe, Ph.D.",
+        "jobTitle": "Principal Field Application Engineer"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CRMicro Official Distributor",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://crmicro.elec-distributor.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "articleBody": "This comprehensive guide covers thermal management techniques for power electronics designs using CRMicro components, including heatsink selection, thermal interface materials, and cooling methods."
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 跳转到主内容链接，仅对屏幕阅读器可见但键盘用户可用 -->
+    <a href="#main-content" class="sr-only sr-only-focusable">跳转到主内容</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">CRMicro Distributor</a>
+            
+            <nav class="nav-menu">
+                <a href="/">Home</a>
+                <a href="/products/">Products</a>
+                <a href="/solutions/">Solutions</a>
+                <a href="/support/" class="active">Support</a>
+                <a href="/news/">News</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            
+            <a href="/contact/" class="cta-button">Request Quote</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container" id="main-content">
+        <div class="breadcrumb">
+            <a href="/">Home</a> / <a href="/support/">Support</a> / <a href="/support/technical-articles/">Technical Articles</a> / <span>Thermal Management</span>
+        </div>
+    </div>
+
+    <!-- Article Hero -->
+    <section class="hero" style="height: 400px; background: linear-gradient(135deg, #0f172a, #1e293b);">
+        <div class="hero-content">
+            <h1>Advanced Thermal Management for Power Electronics</h1>
+            <p>Comprehensive guide to maintaining optimal temperatures with CRMicro components</p>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-2xl">
+        <div class="container" style="max-width: 900px;">
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E7EB; padding-bottom: var(--space-m); margin-bottom: var(--space-xl);">
+                    <div>
+                        <h2>Advanced Thermal Management for Power Electronics</h2>
+                        <p>By John Doe, Ph.D., Principal FAE</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p>January 15, 2025</p>
+                        <p style="color: var(--neutral-gray);">Reading time: 15 min</p>
+                    </div>
+                </div>
+
+                <div style="line-height: var(--leading-relaxed);">
+                    <p>Thermal management is critical in power electronics design, directly impacting reliability, efficiency, and lifespan of power semiconductor devices. As power densities increase and operating temperatures rise, effective thermal management becomes more challenging and essential. This guide provides comprehensive insights into thermal management techniques optimized for CRMicro components.</p>
+
+                    <h3 class="mt-2xl">Fundamentals of Thermal Management</h3>
+                    <p>Heat generation in power semiconductors occurs through two primary mechanisms:</p>
+                    <ol style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Conduction losses</strong> - When current flows through the device, power is dissipated as P = I² × R</li>
+                        <li><strong>Switching losses</strong> - Energy lost during turn-on and turn-off transitions</li>
+                    </ol>
+
+                    <p>The total power dissipation (P<sub>TOTAL</sub>) is the sum of these losses:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        P<sub>TOTAL</sub> = P<sub>CONDUCTION</sub> + P<sub>SWITCHING</sub>
+                    </p>
+
+                    <p>Heat flows from the semiconductor junction to the ambient environment through a thermal resistance network. The junction temperature (T<sub>J</sub>) is calculated as:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        T<sub>J</sub> = T<sub>A</sub> + P<sub>D</sub> × R<sub>θJA</sub>
+                    </p>
+                    <p>Where:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>T<sub>J</sub> = Junction temperature (°C)</li>
+                        <li>T<sub>A</sub> = Ambient temperature (°C)</li>
+                        <li>P<sub>D</sub> = Power dissipation (W)</li>
+                        <li>R<sub>θJA</sub> = Junction-to-ambient thermal resistance (°C/W)</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Thermal Resistance Network</h3>
+                    <p>Heat flows through multiple thermal resistances between junction and ambient:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        T<sub>J</sub> = T<sub>A</sub> + P<sub>D</sub> × (R<sub>θJC</sub> + R<sub>θCS</sub> + R<sub>θSA</sub>)
+                    </p>
+                    <p>Where:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>R<sub>θJC</sub> = Junction-to-case thermal resistance</li>
+                        <li>R<sub>θCS</sub> = Case-to-sink thermal resistance</li>
+                        <li>R<sub>θSA</sub> = Sink-to-ambient thermal resistance</li>
+                    </ul>
+
+                    <p>R<sub>θJC</sub> is determined by the device package and cannot be modified by the designer. R<sub>θCS</sub> depends on thermal interface materials (TIMs) and mounting methods. R<sub>θSA</sub> is determined by heatsink selection and cooling method.</p>
+
+                    <h3 class="mt-2xl">CRMicro Component Thermal Characteristics</h3>
+                    <p>CRMicro devices are designed with thermal performance in mind, but thermal management remains critical:</p>
+
+                    <h4>Thermal Resistance Values</h4>
+                    <p>CRMicro power semiconductors have specified thermal resistance values in their datasheets. Typical values include:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>TO-247 packages: R<sub>θJC</sub> = 0.5-1.2 °C/W</li>
+                        <li>TO-220 packages: R<sub>θJC</sub> = 0.8-2.0 °C/W</li>
+                        <li>Industrial modules: R<sub>θJC</sub> = 0.1-0.5 °C/W</li>
+                    </ul>
+
+                    <h4>Maximum Junction Temperatures</h4>
+                    <p>CRMicro devices specify maximum junction temperatures:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Silicon MOSFETs/IGBTs: 150-175°C</li>
+                        <li>Silicon Carbide devices: 200°C</li>
+                        <li>SiC MOSFETs: 200°C</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Thermal Interface Materials (TIMs)</h3>
+                    <p>Thermal interface materials are critical for efficient heat transfer between the device case and heatsink:</p>
+
+                    <h4>Thermal Pads</h4>
+                    <p>Pre-cut pads that compress to conform to surface irregularities. Advantages include:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Easy application and replacement</li>
+                        <li>No pumping out over temperature cycles</li>
+                        <li>Electrically insulative versions available</li>
+                        <li>Typical thermal conductivity: 1.0-5.0 W/m·K</li>
+                    </ul>
+
+                    <h4>Thermal Grease</h4>
+                    <p>Thermally conductive compound that fills microscopic air gaps. Advantages include:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Excellent conformability to surface irregularities</li>
+                        <li>Low interface resistance</li>
+                        <li>Cost effective</li>
+                    </ul>
+                    <p>Disadvantages include potential pumping out and degradation over time.</p>
+
+                    <h4>Phase Change Materials (PCM)</h4>
+                    <p>Solid at room temperature that melts at operating temperature to fill gaps:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Initial solid state for easy handling</li>
+                        <li>Liquid state for optimal gap filling</li>
+                        <li>Re-solidifies during cooling cycles</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Heatsink Selection and Design</h3>
+
+                    <h4>Natural Convection Heatsinks</h4>
+                    <p>Passive cooling suitable for low-to-moderate power dissipation:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>No moving parts, silent operation</li>
+                        <li>Lower cost than active cooling</li>
+                        <li>Require larger surface area</li>
+                        <li>Sensitive to orientation and environmental conditions</li>
+                    </ul>
+
+                    <p>For natural convection cooling:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        R<sub>θSA</sub> ≈ (7.5 × A<sup>-0.68</sup>) ÷ (0.7 + 0.3 × (T<sub>HS</sub> - T<sub>A</sub>)<sup>0.25</sup>)
+                    </p>
+                    <p>Where A is heatsink surface area (m²), T<sub>HS</sub> is heatsink temperature (°C), and T<sub>A</sub> is ambient temperature (°C).</p>
+
+                    <h4>Forced Air Cooling</h4>
+                    <p>Active cooling using fans to increase heat transfer coefficient:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Smaller heatsink size possible</li>
+                        <li>Better performance at high altitudes</li>
+                        <li>Increased system complexity and noise</li>
+                        <li>Requires fan power consumption</li>
+                    </ul>
+
+                    <p>For forced air cooling:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        R<sub>θSA</sub> ≈ constant ÷ (air_velocity)<sup>0.6</sup>
+                    </p>
+
+                    <h4>Liquid Cooling</h4>
+                    <p>For high-power applications where air cooling is insufficient:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Very high heat transfer rates</li>
+                        <li>Most compact solution</li>
+                        <li>Added complexity and cost</li>
+                        <li>Potential leak concerns</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Advanced Cooling Techniques</h3>
+
+                    <h4>Heat Pipes</h4>
+                    <p>Two-phase cooling devices that efficiently transfer heat through vaporization and condensation:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Very high effective thermal conductivity (~10,000 W/m·K)</li>
+                        <li>Isometric temperature transfer</li>
+                        <li>Directional heat transport</li>
+                        <li>Effective for heat transfer between components</li>
+                    </ul>
+
+                    <h4>Microchannel Cooling</h4>
+                    <p>High-efficiency cooling using small channels for fluid flow:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Very high heat transfer coefficients</li>
+                        <li>Compact design</li>
+                        <li>Requires pump power</li>
+                        <li>Susceptible to clogging</li>
+                    </ul>
+
+                    <h4>Vapor Chambers</h4>
+                    <p>Planar heat pipes for spreading heat over large areas:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Uniform temperature distribution</li>
+                        <li>Efficient heat spreading</li>
+                        <li>Higher cost than standard heatsinks</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Thermal Design Process</h3>
+
+                    <h4>Step 1: Power Dissipation Calculation</h4>
+                    <p>Calculate total power dissipation for each device:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Conduction loss: P<sub>COND</sub> = I<sub>RMS</sub>² × R<sub>DS(on)</sub> or V<sub>CE(sat)</sub> × I<sub>AVG</sub></li>
+                        <li>Switching loss: P<sub>SW</sub> = (E<sub>ON</sub> + E<sub>OFF</sub>) × f<sub>SW</sub></li>
+                        <li>P<sub>TOTAL</sub> = P<sub>COND</sub> + P<sub>SW</sub></li>
+                    </ul>
+
+                    <h4>Step 2: Thermal Resistance Budget</h4>
+                    <p>Determine maximum allowable thermal resistance:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        R<sub>θJA(max)</sub> = (T<sub>J(max)</sub> - T<sub>A(max)</sub>) ÷ P<sub>D</sub>
+                    </p>
+
+                    <h4>Step 3: Heatsink Selection</h4>
+                    <p>Select heatsink based on required R<sub>θSA:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        R<sub>θSA(max)</sub> = R<sub>θJA(max)</sub> - R<sub>θJC</sub> - R<sub>θCS</sub>
+                    </p>
+
+                    <h3 class="mt-2xl">Thermal Measurement and Monitoring</h3>
+
+                    <h4>Temperature Measurement</h4>
+                    <p>Accurate temperature measurement is essential for thermal validation:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li><strong>Thermal couples</strong> - Direct contact measurement, good accuracy</li>
+                        <li><strong>Infrared thermography</strong> - Non-contact measurement, thermal mapping</li>
+                        <li><strong>Embedded sensors</strong> - Built-in temperature sensing in some devices</li>
+                    </ul>
+
+                    <h4>Thermal Monitoring in Operation</h4>
+                    <p>Many CRMicro devices include temperature protection features:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Temperature-dependent R<sub>DS(on)</sub> sensing</li>
+                        <li>Body diode forward voltage monitoring</li>
+                        <li>Integrated temperature sensors</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Package Selection for Thermal Performance</h3>
+                    <p>Different package types offer varying thermal performance:</p>
+
+                    <h4>Through-Hole Packages</h4>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>TO-220: R<sub>θJC</sub> ≈ 0.5-1.0 °C/W</li>
+                        <li>TO-247: R<sub>θJC</sub> ≈ 0.3-0.5 °C/W</li>
+                    </ul>
+
+                    <h4>Surface Mount Packages</h4>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>TO-263 (D2PAK): R<sub>θJC</sub> ≈ 0.4-0.8 °C/W</li>
+                        <li>TO-252 (DPAK): R<sub>θJC</sub> ≈ 0.8-1.5 °C/W</li>
+                        <li>PowerPAK: R<sub>θJC</sub> ≈ 0.5-1.2 °C/W</li>
+                    </ul>
+
+                    <h4>Power Modules</h4>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Industrial modules: R<sub>θJC</sub> ≈ 0.1-0.3 °C/W</li>
+                        <li>Integrated baseplate designs</li>
+                    </ul>
+
+                    <h3 class="mt-2xl">Thermal Simulation and Modeling</h3>
+
+                    <h4>Thermal Simulation Software</h4>
+                    <p>Use simulation tools to optimize thermal design:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Computational Fluid Dynamics (CFD) for airflow analysis</li>
+                        <li>Finite Element Analysis (FEA) for detailed temperature mapping</li>
+                        <li>Thermal equivalent circuits for rapid analysis</li>
+                    </ul>
+
+                    <h4>Model Validation</h4>
+                    <p>Always validate simulation results with actual thermal measurements:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Build prototypes for thermal validation</li>
+                        <li>Measure temperatures under worst-case conditions</li>
+                        <li>Account for manufacturing variations</li>
+                    </ul>
+
+                    <div class="mt-2xl" style="background: var(--light-gray); padding: var(--space-xl); border-left: 4px solid var(--accent-blue); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+                        <h4>Thermal Design Tip</h4>
+                        <p>When using CRMicro SiC devices, take advantage of their higher junction temperature capability (up to 200°C) to reduce heatsink requirements compared to silicon devices. However, ensure that external components (capacitors, magnetics) can also withstand the higher temperatures.</p>
+                    </div>
+
+                    <h3 class="mt-2xl">Reliability Considerations</h3>
+                    <p>Thermal cycling affects long-term reliability:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Use acceleration factors to predict lifetime at different temperatures</li>
+                        <li>Account for thermal expansion mismatch in TIMs</li>
+                        <li>Design for maximum temperature gradients</li>
+                    </ul>
+
+                    <p>Temperature acceleration follows the Arrhenius equation:</p>
+                    <p class="mt-xl" style="background: var(--light-gray); padding: var(--space-m); border-radius: var(--radius-md); font-family: monospace; margin: var(--space-m) 0;">
+                        Life = Life<sub>Ref</sub> × e<sup>((E<sub>a</sub>/k) × (1/T<sub>op</sub> - 1/T<sub>Ref</sub>)</sup>
+                    </p>
+
+                    <h3 class="mt-2xl">Conclusion</h3>
+                    <p>Effective thermal management is essential for reliable power electronics operation. With CRMicro's diverse portfolio of power semiconductors, designers must consider thermal performance from the initial design phase through validation and production.</p>
+
+                    <p>Successful thermal design requires understanding of:</p>
+                    <ul style="margin: var(--space-m) 0 0 var(--space-xl);">
+                        <li>Device thermal characteristics</li>
+                        <li>Package options and their thermal properties</li>
+                        <li>Thermal interface materials</li>
+                        <li>Heatsink selection and cooling methods</li>
+                        <li>Thermal simulation and validation techniques</li>
+                    </ul>
+
+                    <p>By following these thermal management principles, designers can ensure optimal performance and longevity of CRMicro-based power electronics systems.</p>
+                </div>
+
+                <div class="hero-buttons" style="justify-content: flex-start; margin-top: var(--space-xl); border-top: 1px solid #E5E7EB; padding-top: var(--space-xl);">
+                    <a href="/products/" class="secondary-button">CRMicro Products</a>
+                    <a href="/support/design-guides/thermal-design/" class="secondary-button">Thermal Design Guides</a>
+                    <a href="/contact/" class="cta-button" style="margin-left: var(--space-m);">Contact FAE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="py-2xl" style="background-color: var(--neutral-light-gray);">
+        <div class="container">
+            <h2 class="text-center mb-2xl">Related Articles</h2>
+            <div class="solutions-grid">
+                <div class="card">
+                    <h3>PCB Thermal Design</h3>
+                    <p>Techniques for thermal management at the circuit board level</p>
+                    <a href="/support/technical-articles/pcb-thermal/" class="secondary-button">Read Article</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Thermal Interface Materials</h3>
+                    <p>Detailed comparison of TIMs for power electronics</p>
+                    <a href="/support/technical-articles/tim-selection/" class="secondary-button">Read Article</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Cooling System Design</h3>
+                    <p>Methods for air and liquid cooling in power systems</p>
+                    <a href="/support/technical-articles/cooling-systems/" class="secondary-button">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CRMicro Distributor</h3>
+                <p>Authorized distributor for CRMicro power semiconductors, providing genuine products, technical expertise, and global support.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/solutions/">Solutions</a></li>
+                    <li><a href="/support/">Support</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="/products/mosfets/">MOSFETs</a></li>
+                    <li><a href="/products/igbts/">IGBTs</a></li>
+                    <li><a href="/products/wide-bandgap/">Wide Bandgap</a></li>
+                    <li><a href="/products/power-ics/">Power ICs</a></li>
+                    <li><a href="/products/smart-sensors/">Smart Sensors</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@crmicro.elec-distributor.com</p>
+                <p>Phone: +86-XXX-XXXX-XXXX</p>
+                <p>Global Sales Network</p>
+            </div>
+        </div>
+        
+        <div class="container text-center" style="margin-top: var(--space-xl); padding-top: var(--space-xl); border-top: 1px solid rgba(255,255,255,0.1);">
+            <p>&copy; 2025 CRMicro Official Distributor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+</body>
+</html>

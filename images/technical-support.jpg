@@ -1,0 +1,73 @@
+<!-- Technical Support Image -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" fill="#1f2937" text-anchor="middle">Technical Support Services</text>
+  
+  <!-- Support Services -->
+  <g transform="translate(100, 100)">
+    <!-- Design Assistance -->
+    <rect x="0" y="0" width="200" height="150" fill="#e0e7ff" stroke="#6366f1" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Design</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Assistance</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Schematic review</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Component selection</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Layout guidance</text>
+  </g>
+  
+  <!-- Application Engineering -->
+  <g transform="translate(310, 100)">
+    <rect x="0" y="0" width="200" height="150" fill="#c7d2fe" stroke="#4f46e5" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Application</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Engineering</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Circuit design</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Parameter calculation</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Performance optimization</text>
+  </g>
+  
+  <!-- Troubleshooting -->
+  <g transform="translate(520, 100)">
+    <rect x="0" y="0" width="200" height="150" fill="#a5b4fc" stroke="#4f46e5" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Technical</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Troubleshooting</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Problem diagnosis</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Failure analysis</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" text-anchor="middle">Resolution guidance</text>
+  </g>
+  
+  <!-- Training & Education -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="150" fill="#bfdbfe" stroke="#3b82f6" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#1e40af" text-anchor="middle">Training &</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#1e40af" text-anchor="middle">Education</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Technical workshops</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Technology seminars</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Best practice guides</text>
+  </g>
+  
+  <!-- Custom Solutions -->
+  <g transform="translate(310, 280)">
+    <rect x="0" y="0" width="200" height="150" fill="#93c5fd" stroke="#2563eb" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a" text-anchor="middle">Custom</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a" text-anchor="middle">Solutions</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Tailored components</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Unique specifications</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Specialized applications</text>
+  </g>
+  
+  <!-- Documentation -->
+  <g transform="translate(520, 280)">
+    <rect x="0" y="0" width="200" height="150" fill="#7dd3fc" stroke="#0284c7" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#0c4a6e" text-anchor="middle">Technical</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#0c4a6e" text-anchor="middle">Documentation</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#0ea5e9" text-anchor="middle">Datasheets</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#0ea5e9" text-anchor="middle">Application notes</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#0ea5e9" text-anchor="middle">Reference designs</text>
+  </g>
+  
+  <!-- Support Contact -->
+  <g transform="translate(100, 460)">
+    <rect width="600" height="100" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="10"/>
+    <text x="300" y="490" font-family="Arial, sans-serif" font-size="20" fill="#1e3a8a" text-anchor="middle">Contact Our Technical Support Team</text>
+    <text x="300" y="520" font-family="Arial, sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle">Email: tech@crmicro.elec-distributor.com | Phone: +86-XXX-XXXX-XXXX</text>
+  </g>
+</svg>

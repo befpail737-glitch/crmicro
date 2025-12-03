@@ -1,0 +1,56 @@
+<!-- IGBT Structure and Types -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#1f2937" text-anchor="middle">CRMicro IGBT Product Types</text>
+  
+  <!-- IGBT Symbol with structure -->
+  <g transform="translate(100, 150)">
+    <rect width="600" height="300" fill="#ffffff" stroke="#d1d5db" stroke-width="2" rx="10"/>
+    
+    <!-- IGBT Internal Structure -->
+    <rect x="50" y="50" width="500" height="200" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+    
+    <!-- Layers -->
+    <rect x="50" y="50" width="500" height="20" fill="#ef4444" /> <!-- P+ Emitter -->
+    <text x="300" y="65" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">P+ Collector</text>
+    
+    <rect x="50" y="70" width="500" height="100" fill="#f87171" /> <!-- N- Drift Region -->
+    <text x="300" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1f2a40" text-anchor="middle">N- Drift Region (Base)</text>
+    
+    <rect x="50" y="170" width="500" height="20" fill="#34d399" /> <!-- P Base -->
+    <text x="300" y="185" font-family="Arial, sans-serif" font-size="12" fill="#1f2a40" text-anchor="middle">P Base Region</text>
+    
+    <rect x="50" y="190" width="500" height="20" fill="#60a5fa" /> <!-- N+ Source -->
+    <text x="300" y="205" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">N+ Source</text>
+    
+    <!-- Gate Structure -->
+    <rect x="250" y="30" width="100" height="20" fill="#c084fc" stroke="#7e22ce" stroke-width="1"/> <!-- Gate -->
+    <text x="300" y="45" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Gate Terminal</text>
+    
+    <!-- Terminal Labels -->
+    <text x="70" y="250" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" text-anchor="start">Collector (C)</text>
+    <text x="70" y="270" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="start">High Voltage</text>
+    
+    <text x="300" y="250" font-family="Arial, sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle">Gate (G)</text>
+    <text x="300" y="270" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Control Terminal</text>
+    
+    <text x="530" y="250" font-family="Arial, sans-serif" font-size="14" fill="#059669" text-anchor="end">Emitter (E)</text>
+    <text x="530" y="270" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="end">Common Reference</text>
+    
+    <!-- IGBT Symbol representation -->
+    <path d="M 60 280 L 60 340 L 100 340 L 100 300 L 120 300" stroke="#1f2937" stroke-width="3" fill="none"/>
+    <line x1="60" y1="340" x2="120" y2="340" stroke="#1f2937" stroke-width="3"/>
+    <line x1="120" y1="300" x2="140" y2="320" stroke="#1f2937" stroke-width="3"/>
+    <line x1="120" y1="340" x2="140" y2="320" stroke="#1f2937" stroke-width="3"/>
+    <text x="90" y="370" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="middle">Symbol Representation</text>
+  </g>
+  
+  <!-- Characteristics info -->
+  <g transform="translate(100, 480)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#1f2937">IGBT Characteristics:</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="12" fill="#4b5563">• High voltage capability (600V-3300V)</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="12" fill="#4b5563">• Low saturation voltage</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" fill="#4b5563">• High current density</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="12" fill="#4b5563">• Good for high-power applications</text>
+  </g>
+</svg>

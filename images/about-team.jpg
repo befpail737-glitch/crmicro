@@ -1,0 +1,69 @@
+<!-- About Us Team Image -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" fill="#1f2937" text-anchor="middle">Our Engineering Team</text>
+  
+  <!-- Team Member 1 -->
+  <g transform="translate(100, 150)">
+    <circle cx="60" cy="60" r="50" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+    <text x="60" y="130" font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a" text-anchor="middle">John Doe</text>
+    <text x="60" y="150" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Principal FAE</text>
+    <text x="60" y="170" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Power Electronics</text>
+  </g>
+  
+  <!-- Team Member 2 -->
+  <g transform="translate(280, 150)">
+    <circle cx="60" cy="60" r="50" fill="#d1fae5" stroke="#10b981" stroke-width="3"/>
+    <text x="60" y="130" font-family="Arial, sans-serif" font-size="16" fill="#065f46" text-anchor="middle">Jane Smith</text>
+    <text x="60" y="150" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Sr. Application</text>
+    <text x="60" y="170" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Engineer</text>
+  </g>
+  
+  <!-- Team Member 3 -->
+  <g transform="translate(460, 150)">
+    <circle cx="60" cy="60" r="50" fill="#fef08a" stroke="#f59e0b" stroke-width="3"/>
+    <text x="60" y="130" font-family="Arial, sans-serif" font-size="16" fill="#92400e" text-anchor="middle">Mike Roberts</text>
+    <text x="60" y="150" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Application Eng.</text>
+    <text x="60" y="170" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Consumer Elec.</text>
+  </g>
+  
+  <!-- Team Member 4 -->
+  <g transform="translate(640, 150)">
+    <circle cx="60" cy="60" r="50" fill="#f0abfc" stroke="#d946ef" stroke-width="3"/>
+    <text x="60" y="130" font-family="Arial, sans-serif" font-size="16" fill="#86198f" text-anchor="middle">Lisa Wang</text>
+    <text x="60" y="150" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">FAE Manager</text>
+    <text x="60" y="170" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Technical Leader</text>
+  </g>
+  
+  <!-- Team Info -->
+  <g transform="translate(100, 350)">
+    <rect width="600" height="180" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="10"/>
+    <text x="300" y="380" font-family="Arial, sans-serif" font-size="20" fill="#0c4a6e" text-anchor="middle">Technical Expertise</text>
+    <text x="300" y="410" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a" text-anchor="middle">Our team combines decades of power semiconductor experience</text>
+    
+    <!-- Stats -->
+    <g transform="translate(50, 450)">
+      <rect width="120" height="60" fill="#ffffff" stroke="#1e40af" stroke-width="2" rx="5"/>
+      <text x="60" y="485" font-family="Arial, sans-serif" font-size="24" fill="#1e40af" text-anchor="middle">20+</text>
+      <text x="60" y="505" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Years Exp</text>
+    </g>
+    
+    <g transform="translate(200, 450)">
+      <rect width="120" height="60" fill="#ffffff" stroke="#10b981" stroke-width="2" rx="5"/>
+      <text x="60" y="485" font-family="Arial, sans-serif" font-size="24" fill="#065f46" text-anchor="middle">100+</text>
+      <text x="60" y="505" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Projects</text>
+    </g>
+    
+    <g transform="translate(350, 450)">
+      <rect width="120" height="60" fill="#ffffff" stroke="#f59e0b" stroke-width="2" rx="5"/>
+      <text x="60" y="485" font-family="Arial, sans-serif" font-size="24" fill="#92400e" text-anchor="middle">50+</text>
+      <text x="60" y="505" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Clients</text>
+    </g>
+    
+    <g transform="translate(500, 450)">
+      <rect width="120" height="60" fill="#ffffff" stroke="#d946ef" stroke-width="2" rx="5"/>
+      <text x="60" y="485" font-family="Arial, sans-serif" font-size="24" fill="#86198f" text-anchor="middle">98%</text>
+      <text x="60" y="505" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Satisfaction</text>
+    </g>
+  </g>
+</svg>

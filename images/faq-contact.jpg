@@ -1,0 +1,91 @@
+<!-- FAQ Support Image -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" fill="#1f2937" text-anchor="middle">Technical Support Resources</text>
+  
+  <!-- Support Boxes -->
+  <g transform="translate(100, 100)">
+    <!-- Application Notes -->
+    <rect x="0" y="0" width="200" height="120" fill="#dbeafe" stroke="#3b82f6" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a" text-anchor="middle">Application</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a" text-anchor="middle">Notes</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Step-by-step</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">implementation guides</text>
+  </g>
+  
+  <!-- Selection Guides -->
+  <g transform="translate(310, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#d1fae5" stroke="#10b981" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#065f46" text-anchor="middle">Selection</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#065f46" text-anchor="middle">Guides</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Help choose the</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">right components</text>
+  </g>
+  
+  <!-- Design Tools -->
+  <g transform="translate(520, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#fef08a" stroke="#f59e0b" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#92400e" text-anchor="middle">Design</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#92400e" text-anchor="middle">Tools</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Calculators and</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">selection aids</text>
+  </g>
+  
+  <!-- Technical Articles -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="200" height="120" fill="#f0abfc" stroke="#d946ef" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#86198f" text-anchor="middle">Technical</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#86198f" text-anchor="middle">Articles</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">In-depth content</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">about technologies</text>
+  </g>
+  
+  <!-- FAQ Section -->
+  <g transform="translate(310, 250)">
+    <rect x="0" y="0" width="200" height="120" fill="#e0e7ff" stroke="#6366f1" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Frequently</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#4f46e5" text-anchor="middle">Asked Q's</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Common questions</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">and answers</text>
+  </g>
+  
+  <!-- Contact Support -->
+  <g transform="translate(520, 250)">
+    <rect x="0" y="0" width="200" height="120" fill="#fee2e2" stroke="#e11d48" stroke-width="3" rx="10"/>
+    <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" fill="#9f1239" text-anchor="middle">Contact</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="16" fill="#9f1239" text-anchor="middle">FAE</text>
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">Direct technical</text>
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="#4b5563" text-anchor="middle">assistance</text>
+  </g>
+  
+  <!-- Support Process -->
+  <g transform="translate(100, 400)">
+    <rect width="600" height="150" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2" rx="10"/>
+    <text x="300" y="430" font-family="Arial, sans-serif" font-size="18" fill="#1f2937" text-anchor="middle">Our Support Process</text>
+    
+    <!-- Steps -->
+    <g transform="translate(50, 450)">
+      <circle cx="0" cy="0" r="20" fill="#1e40af" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">1</text>
+      <text x="40" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="start">Identify Needs</text>
+    </g>
+    
+    <g transform="translate(200, 450)">
+      <circle cx="0" cy="0" r="20" fill="#1e40af" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">2</text>
+      <text x="40" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="start">Consult Resources</text>
+    </g>
+    
+    <g transform="translate(380, 450)">
+      <circle cx="0" cy="0" r="20" fill="#1e40af" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">3</text>
+      <text x="40" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="start">Contact FAE</text>
+    </g>
+    
+    <g transform="translate(540, 450)">
+      <circle cx="0" cy="0" r="20" fill="#1e40af" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">4</text>
+      <text x="40" y="5" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="start">Get Solution</text>
+    </g>
+  </g>
+</svg>
